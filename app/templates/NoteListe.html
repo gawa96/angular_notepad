@@ -1,0 +1,10 @@
+ <div class ="container">
+  <ul class="notes">
+    
+
+    <div *ngFor="let OneNote of notes"> 
+      <noteHandler [note]= "OneNote" (saveNote)="saveNote()"></noteHandler>
+
+    </div>
+  </ul>
+</div>
