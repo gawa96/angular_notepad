@@ -9,22 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Categories = [{ label: 'camion', id: 1 }];
-var Notes = [
-    { id: 1, title: 'test', content: 'ceci est un test', date: '12/04/2018', Category: Categories[0] },
-    { id: 2, title: 'test2', content: 'ceci est un test', date: '12/05/2014', Category: Categories[0] }];
-var NoteComponent = (function () {
-    function NoteComponent() {
-        this.notes = Notes;
+var NoteEditorComponent = (function () {
+    function NoteEditorComponent() {
+        this.closeModify = new core_1.EventEmitter();
     }
-    NoteComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], NoteEditorComponent.prototype, "noteEdit", void 0);
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', core_1.EventEmitter)
+    ], NoteEditorComponent.prototype, "closeModify", void 0);
+    NoteEditorComponent = __decorate([
         core_1.Component({
-            selector: 'note',
-            templateUrl: 'app/templates/NoteListe.html'
+            selector: 'noteeditor',
+            templateUrl: 'app/templates/noteEdit.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], NoteComponent);
-    return NoteComponent;
+    ], NoteEditorComponent);
+    return NoteEditorComponent;
 }());
-exports.NoteComponent = NoteComponent;
-//# sourceMappingURL=note.component.js.map
+exports.NoteEditorComponent = NoteEditorComponent;
+//# sourceMappingURL=noteEditor.component.js.map

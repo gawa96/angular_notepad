@@ -14,13 +14,14 @@ var app_component_1 = require('./app.component');
 var menu_component_1 = require('./menu.component');
 var note_component_1 = require('./note.component');
 var notehandler_component_1 = require('./notehandler.component');
+var noteEditor_component_1 = require('./noteEditor.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, menu_component_1.MenuComponent, note_component_1.NoteComponent, notehandler_component_1.NotehandlerComponent],
+            declarations: [app_component_1.AppComponent, menu_component_1.MenuComponent, note_component_1.NoteComponent, notehandler_component_1.NotehandlerComponent, noteEditor_component_1.NoteEditorComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

@@ -4,7 +4,7 @@
        				<h2> {{note.title}}  <small>{{note.categorie}}</small></h2>
     			</div>
 
-    			<div class="panel-body">{{note.contenue}}</div>
+    			<div class="panel-body">{{note.content}}</div>
     				<div class="panel-footer">
         				<button class="btn btn-primary" (click)="modifying=true">Modifier</button>
 
@@ -13,3 +13,7 @@
             </div>
     	</div>
      </div>    
+     <div *ngIf="modifying">    
+    <noteeditor [noteEdit]="note" (closeModify)="closeModify()"></noteeditor>
+    <br/>
+    </div>
