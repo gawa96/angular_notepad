@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var classe_1 = require('./classe');
+var classe_2 = require('./classe');
 var NotehandlerComponent = (function () {
     function NotehandlerComponent() {
         this.deleteNote = new core_1.EventEmitter();
@@ -25,6 +26,10 @@ var NotehandlerComponent = (function () {
         core_1.Input(), 
         __metadata('design:type', classe_1.Note)
     ], NotehandlerComponent.prototype, "note", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', classe_2.Category)
+    ], NotehandlerComponent.prototype, "categories", void 0);
     __decorate([
         core_1.Output(), 
         __metadata('design:type', core_1.EventEmitter)

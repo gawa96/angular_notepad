@@ -10,6 +10,7 @@ import { Category } from './classe';
 export class NotehandlerComponent  {
 	
 	@Input() note: Note;
+	@Input() categories : Category;
 	@Output() deleteNote:EventEmitter<any> = new EventEmitter();
 	@Output() SaveNote:EventEmitter<any> = new EventEmitter();
 	

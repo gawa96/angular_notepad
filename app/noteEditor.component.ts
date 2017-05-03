@@ -12,6 +12,7 @@ export class NoteEditorComponent{
 
 	/// dans le Input tu met le Constructeur Note dans la variable noteEdit voir noteHandler.html la balise
 	@Input() noteEdit: Note;
+	@Input() categories : Category;
 	@Output() closeModify:EventEmitter<any> = new EventEmitter();
 
 	oldNote : Note;

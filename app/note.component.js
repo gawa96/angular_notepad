@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Categories = [{ label: 'camion', id: 1 }];
+var Categories = [{ label: 'camion', id: 1 },
+    { label: 'bus', id: 2 }];
 var Notes = [
     { id: 1, title: 'test', content: 'ceci est un test', date: '12/04/2018', category: Categories[0] },
     { id: 2, title: 'test2', content: 'ceci est un test', date: '12/05/2014', category: Categories[0] }];
 var NoteComponent = (function () {
     function NoteComponent() {
         this.notes = Notes;
+        this.categories = Categories;
     }
     NoteComponent = __decorate([
         core_1.Component({

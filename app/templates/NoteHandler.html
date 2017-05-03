@@ -15,6 +15,6 @@
      </div>  
      <!-- dans cette partie on on appel le note editor si on veux edite un texte. on envoie la note dans variable noteEdit-->  
     <div *ngIf="modifying">   
-    <noteeditor [noteEdit]="note" (closeModify)="closeModify()"></noteeditor>
+    <noteeditor [noteEdit]="note" [categories] = "categories" (closeModify)="closeModify()"></noteeditor>
     <br/>
     </div>
