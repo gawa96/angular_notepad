@@ -11,7 +11,7 @@ import { NoteEditorComponent } from './noteEditor.component';
 import { AppRoutingModule }     from './app-routing.module';	
 
 @NgModule({
-  imports: [ BrowserModule ],
+  imports: [ BrowserModule, FormsModule ],
 
   declarations: [ AppComponent, MenuComponent, NoteComponent, NotehandlerComponent, NoteEditorComponent ],
   bootstrap:    [ AppComponent ]

@@ -9,14 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var classe_1 = require('./classe');
 var NotehandlerComponent = (function () {
     function NotehandlerComponent() {
         this.deleteNote = new core_1.EventEmitter();
         this.SaveNote = new core_1.EventEmitter();
+        this.modifying = false;
     }
+    //We close the window and we send a message to the parent to save the note
+    NotehandlerComponent.prototype.closeModify = function (note) {
+        this.modifying = false;
+        this.SaveNote.emit(note);
+    };
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Object)
+        __metadata('design:type', classe_1.Note)
     ], NotehandlerComponent.prototype, "note", void 0);
     __decorate([
         core_1.Output(), 

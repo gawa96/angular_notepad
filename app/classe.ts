@@ -15,7 +15,7 @@ export class Note{
 	public category: Category;
 	public date: string;
 	
-	constructor(id:number,title:string,content:string, date: date, category: Category){
+	constructor(id:number,title:string,content:string, date:string, category: Category){
 		this.id = id;
 		this.title = title;
 		this.content = content;

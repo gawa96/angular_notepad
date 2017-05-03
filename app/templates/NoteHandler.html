@@ -1,7 +1,7 @@
      <div  class="row">
         <div class ="panel panel-default">
     			<div class="panel-heading">                   
-       				<h2> {{note.title}}  <small>{{note.categorie}}</small></h2>
+       				<h2> {{note.title}} <small>{{note.category.label}}</small> </h2>
     			</div>
 
     			<div class="panel-body">{{note.content}}</div>
@@ -12,8 +12,9 @@
         				<em class="pull-right">{{note.date}}</em>
             </div>
     	</div>
-     </div>    
-     <div *ngIf="modifying">    
+     </div>  
+     <!-- dans cette partie on on appel le note editor si on veux edite un texte. on envoie la note dans variable noteEdit-->  
+    <div *ngIf="modifying">   
     <noteeditor [noteEdit]="note" (closeModify)="closeModify()"></noteeditor>
     <br/>
     </div>

@@ -11,8 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var Categories = [{ label: 'camion', id: 1 }];
 var Notes = [
-    { id: 1, title: 'test', content: 'ceci est un test', date: '12/04/2018', Category: Categories[0] },
-    { id: 2, title: 'test2', content: 'ceci est un test', date: '12/05/2014', Category: Categories[0] }];
+    { id: 1, title: 'test', content: 'ceci est un test', date: '12/04/2018', category: Categories[0] },
+    { id: 2, title: 'test2', content: 'ceci est un test', date: '12/05/2014', category: Categories[0] }];
 var NoteComponent = (function () {
     function NoteComponent() {
         this.notes = Notes;

@@ -1,2 +1,13 @@
+<form>
+	<div class ="form_group">
 
-
+	<label> Titre </label>
+	<input [(ngModel)]="noteEdit.title" type="text" class="form-control">	
+	<div class="pull-right">
+	
+		<button role="button" class="btn btn-success" (click)="SaveNote(noteEdit)"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Save Note</button>
+		<button role="button" class="btn btn-warning" (click)="CancelEdit()"><i class="fa fa-times" aria-hidden="true"></i>&nbsp; Cancel</button>
+	
+	</div>
+	</div>
+</form>
